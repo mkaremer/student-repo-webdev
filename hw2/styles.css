@@ -27,9 +27,120 @@ form {
 }
 
 /* Code for exercise 01-navbar */
+/* Define styles for the class "navbar" */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #080808;
+}
 
+/* Define styles for the class "navbar-item" */
+.navbar-item {
+  float: right;
+}
+
+/* Define styles for the class "navbar-link" */
+.navbar-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Define styles for the class "navbar-link" when hovered */
+.navbar-link:hover {
+  background-color: #a2106d;
+}
 /* Code for exercise 02-cards */
+.outterContainer{
+  border: 2px solid;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+.innerContainer{
+  margin-right: auto;
+  border: 2px solid;
+  margin-left: 10px;
+}
 
+.flex-item-left{
+  flex: 25%;
+  min-width: 0;
+}
+
+.flex-item-middle{
+  flex: 25%;
+  min-width: 0;
+}
+
+.flex-item-right{
+  flex: 25%;
+  min-width: 0;
+}
+
+.custom-margin{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.custom-link{
+  display: block;
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #080808;
+}
 /* Code for exercise 03-table */
+.customize-table,td {
+  border:1px solid black;
+  margin: 0 auto;
+}
+
+.customize-table th, .customize-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.customize-table tr:nth-child(1) {
+  background-color: black; /* First row background color */
+  color: white; /* Text color for the first row */
+}
+
+.customize-table tr td:first-child {
+  background-color: #a2106d; /* First column background color */
+  color: white; /* Text color for the first column */
+}
+
+.customize-table tr td:first-child:first-child {
+  background-color: black; /* First cell in the first column background color */
+}
+
+.customize-hover:hover {
+  background-color: #ffa500; /* Highlight the entire row on hover */
+  color: black; /* Text color for the highlighted row */
+}
 
 /* Code for exercise 04-form */
+.outterBox{
+  border: 2px solid;
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  padding: 20px;
+}
+.innerBox{
+  margin-right: auto;
+  border: 2px solid;
+  margin-left: 10px;
+}
+.flex-item{
+  flex: 25%;
+  min-width: 0;
+}
