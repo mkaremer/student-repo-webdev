@@ -11,34 +11,65 @@
     <main>
       <h1>Exercise 04 - Form</h1>
       <!-- Add your code here -->
-      
-      <div class="outterBox">
-        <div class="innerBox flex-item">
-          <form>
-            <h3>Sign Up Form</h3>
-            <p>Fill up the items in the form below.</p>
-            <label for="fname">Name:</label>
-            <input type="text" id="fname" ><br>
-            <label for="username">Username:</label>
-            <input type="text" id="username"><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email"><br>
-            <label for="dob">Date of birth:</label>
-            <input type="text" id="dob">
-            <p>Preferred Pronouns</p>
-            <input type="radio" id="sheher" name="fav_language" value="She/her">
-            <label for="sheher">She/her</label><br>
-            <input type="radio" id="hehim" name="fav_language" value="He/him">
-            <label for="hehim">He/him</label><br>
-            <input type="radio" id="they" name="fav_language" value="they/them">
-            <label for="sheher">They/them</label><br>
-            <input type="radio" id="notsay" name="fav_language" value="notsay">
-            <label for="sheher">I prefer not to say</label><br>
-            <input type="submit" value="Submit">
-            <input type="submit" value="Reset">
-          </form>
-        </div>
-      </div>
+      <form class="form-container">
+        <fieldset class="container">
+          <p><b>Sign Up Form</b><br />Fill up the items in the form below.</p>
+          <!-- <p>Fill up the items in the form below.</p> -->
+          <p class="input">
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required /><br />
+          </p>
+
+          <p>
+            <label for="username"><strong>Username:</strong></label>
+            <input type="text" id="username" name="username" required /><br />
+          </p>
+
+          <p>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required /><br />
+          </p>
+
+          <p>
+            <label for="password"><strong>Password:</strong></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+          </p>
+
+          <p>
+            <label for="dob"><strong>Date of birth:</strong></label>
+            <input type="date" id="dob" name="dob" required /><br />
+          </p>
+
+          <div class="pronouns-header"><strong>Preferred Pronouns</strong></div>
+
+          <div class="radio-group">
+            <label class="radio-label"
+              ><input type="radio" name="pronouns" value="she" /> She/her</label
+            ><br />
+            <label class="radio-label"
+              ><input type="radio" name="pronouns" value="he" /> He/him</label
+            ><br />
+            <label class="radio-label"
+              ><input type="radio" name="pronouns" value="they" />
+              They/them</label
+            ><br />
+            <label class="radio-label"
+              ><input type="radio" name="pronouns" value="not-say" /> I prefer
+              not to say</label
+            ><br />
+          </div>
+
+          <p class="buttons">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="reset" class="reset-button">Reset</button>
+          </p>
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>

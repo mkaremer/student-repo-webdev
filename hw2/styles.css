@@ -27,33 +27,27 @@ form {
 }
 
 /* Code for exercise 01-navbar */
-/* Define styles for the class "navbar" */
-.navbar {
-  list-style-type: none;
+.navigation{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  background:black;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #080808;
 }
 
-/* Define styles for the class "navbar-item" */
-.navbar-item {
-  float: right;
-}
-
-/* Define styles for the class "navbar-link" */
-.navbar-link {
+.navigation a {
+  text-orientation: none;
   display: block;
+  padding: 1em;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Define styles for the class "navbar-link" when hovered */
-.navbar-link:hover {
-  background-color: #a2106d;
+.navigation a:hover {
+  background: #a2106d;
 }
+
 /* Code for exercise 02-cards */
 .outterContainer{
   border: 2px solid;
@@ -88,16 +82,32 @@ form {
 }
 
 .custom-link{
-  display: block;
+  display:block;
+  text-decoration: none;
   list-style-type: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 0;
+  background-color:black;
   color: white;
   text-align: center;
-  text-decoration: none;
-  background-color: #080808;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  width: 100px;
+  height: 100px;
 }
+
+.custom-button {
+  color: #fff;               
+  background-color: black; 
+  border: none;              
+  text-align: center;  
+  padding: 10px 100px;   
+  margin: 20px;    
+}
+
+.custom-button:hover {
+  background-color: #a2106d; 
+}
+
 /* Code for exercise 03-table */
 .customize-table,td {
   border:1px solid black;
@@ -110,37 +120,54 @@ form {
 }
 
 .customize-table tr:nth-child(1) {
-  background-color: black; /* First row background color */
-  color: white; /* Text color for the first row */
+  background-color: black; 
+  color: white; 
 }
 
 .customize-table tr td:first-child {
-  background-color: #a2106d; /* First column background color */
-  color: white; /* Text color for the first column */
+  background-color: #a2106d; 
+  color: white; 
 }
 
 .customize-table tr td:first-child:first-child {
-  background-color: black; /* First cell in the first column background color */
+  background-color: black;
 }
 
 .customize-hover:hover {
-  background-color: #ffa500; /* Highlight the entire row on hover */
-  color: black; /* Text color for the highlighted row */
+  background-color: #ffa500; 
 }
 
+
 /* Code for exercise 04-form */
-.outterBox{
-  border: 2px solid;
-  /* display: flex; */
-  /* flex-flow: row wrap; */
-  padding: 20px;
+form {
+  margin: auto; 
+  width: 25%;          
+  text-align: center; 
 }
-.innerBox{
-  margin-right: auto;
-  border: 2px solid;
-  margin-left: 10px;
+
+.container {
+  text-align: left;   
 }
-.flex-item{
-  flex: 25%;
-  min-width: 0;
+
+.submit-button{
+  padding: 10px 40px;   
+  margin: 10px;        
+  background-color:black;
+  color: white;
+  border: none;
+}
+
+.reset-button{
+  padding: 10px 40px; 
+  margin: 10px;         
+  background-color:white;
+  color: black;
+  
+}
+.submit-button:hover{
+  background-color: #a2106d;
+}
+
+.reset-button:hover{
+  background-color: #565656;
 }
