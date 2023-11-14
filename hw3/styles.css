@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -34,9 +34,23 @@ form {
 }
 
 /* Code for exercise 01-hello */
-
+.starship-component {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--light-gray);
+  margin: 10px;
+  padding: 20px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
 /* Code for exercise 02-form */
-
+.input {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 /* Code for exercise 03-starships */
 
 .btn-group {
@@ -50,4 +64,51 @@ form {
 .btn {
   width: 80px;
   padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--violetred);
+}
+
+/* spaceship container */
+.starship-component {
+  width: 500px;
+}
+.top-div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+.space-name,
+.cost-credits {
+  font-size: 20px;
+}
+
+/* spaceship manufacturer */
+.manufacturer {
+  display: block;
+  margin: 0;
+}
+
+/* sapceshipt max atmosphering speed  */
+.max-speed {
+  float: left;
+  width: calc(50% - 10px);
+  text-align: center;
+  border-right: 1px solid var(--black);
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+/* spaceship cargo capacity */
+.cargo-capacity {
+  float: right;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
 }
